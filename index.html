@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    
+    <style>
+        div10{
+            display:grid;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            
+        }
+        .grid-10  div:nth-child(1){
+            display: grid;
+            grid-column: 1/6;
+            grid-row: 1/1;
+        }
+        .grid-10   div:nth-child(2){
+            display: grid;
+            grid-column: 1/6;
+            grid-row: 2/2;
+        }
+        .grid-10  div:nth-child(3){
+            display: grid;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .grid-10  div:nth-child(4)
+        {
+            display: grid;
+            grid-column: 4/6;
+            grid-row: 3/3;
+        }
+
+        .grid-10  div:nth-child(5){
+            display: grid;
+            grid-column: 5/6;
+            grid-row: 4/4;
+
+        }
+        .grid-10  div:nth-child(6){
+            display: grid;
+            grid-column: 1/6;
+            grid-row: 5/5;
+
+        }
+        .grid-10  div:nth-child(7){
+            display: grid;
+            grid-column: 1/6;
+            grid-row: 6/6;
+
+        }
+        .grid-10  div:nth-child(8){
+            display: grid;
+            grid-column: 6/6;
+            grid-row: 5/5;
+
+        }
+        .grid-10  div:nth-child(9){
+            display: grid;
+            grid-column: 6/6;
+            grid-row: 6/6;
+
+        }
+        .grid-10  div:nth-child(10){
+            display: grid;
+            grid-column: 6/6;
+            grid-row: 6/6;
+
+        }
+        .grid-10  div:nth-child(11){
+            float :right;
+            display: grid;
+            grid-column: 1/7;
+            grid-row: 7/7;
+
+        }
+        .grid-10  div:nth-child(12){
+            float :right;
+            display: grid;
+            grid-column: 1/8;
+            grid-row: 8/8;
+
+        }
+        .grid-10  div:nth-child(13){
+            float :right;
+            display: grid;
+            grid-column: 1/9;
+            grid-row: 9/9;
+
+        }
+    .box {
+    color: var(--blanco);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;}   
+    .box2 {
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;}    
+    .box1 {
+    color: var(--blanco);
+    padding: 3rem;
+    display: flex;
+    font-size: 2rem;}
+    .box3 {
+    background-color:rgb(221, 191, 134);
+    padding: 3rem;
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 2rem;}   
+    .box4 {
+    background-color:rgb(111, 102, 192);
+    padding: 3rem;
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 2rem;}  
+    .bg_animate{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #005C98, #505BDA);
+    position: relative;
+    overflow: hidden;
+}
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.contenedor2{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header_nav nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="bg_animate">
+        <div class="header_nav">
+            <div class="contenedor2">
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="contenedor">
+
+
+
+            <div10 class="grid-10">
+                
+                <div class="box">
+                    Yo soy Luis
+                </div>
+                <div class="box2">
+                    Cuento con estudios en sistemas operativos<br/> y base de datos.
+                </div>
+                <div class="box">
+                    Sobre mi:
+                </div>
+                <div class="box4">
+                    Persona responsable, honesta, con iniciativa y fácil captación del trabajo encomendado.<br/>
+                    Soy una persona persistente, con metas a cumplir y sobre todo ganas de superarse, doy mi <br/>mayor esfuerzo en todo lo que hago.
+    
+                </div>
+                <div class="box">
+                    Servicios
+                </div>
+                <div class="box3">
+                    Mantenimiento de pc
+                </div>
+                <div class="box4">
+                    Solución efectiva, rápida y confiable para tu <br/>Laptop, PC, ALL IN ONE, MAC, iMac. <br/>Realizamos el diagnóstico de tu equipo dentro de las 72 horas.
+                </div>
+                <div class="box3">
+                    Compra y venta de tu computadora
+                </div>
+                <div class="box4">
+                    Compramos y vendemos CPUS a buenprecio
+                </div>
+                <img  src =  "foto.jpg" alt="Micara" width="500px" height="450px">
+                <div class="box4">
+                    Contactanos
+                </div>
+                <div class="box3">
+                    <a href="https://www.facebook.com/profile.php?id=100008681070144"> Facebook </a>
+                </div>
+                <div class="box3">
+                    <a href="https://www.instagram.com/loffline_/?hl=en"> Instagram </a>
+                </div>
+            </div10>
+    
+        </div>
+
+
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </header>
+    
+
+</body>
+</html>
